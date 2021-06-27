@@ -23,6 +23,7 @@ namespace Api_CQRS.Controllers
             _mediator = mediator;
         }
 
+        // METODO PRINCIPAL DE INICIALIZAÇÃO
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
